@@ -6,6 +6,7 @@
 * Homebrew
 * NodeJS
 * MySQL database
+* \*TODO\* MySQL Workbench
 * VSCode
 * VSCode Live Server
 * Postman
@@ -47,7 +48,7 @@ $ brew help
 
 ### 2. ติดตั้ง Nodejs
 
-Nodejs เป็น runtime ภาษา javascript ที่ช่วยให้เราสามารถรันโค๊ด javascript นอก เว็บเบราเซอร์ได้
+Nodejs เป็น runtime ภาษา javascript ที่ช่วยให้เราสามารถรันโค๊ด javascript นอกเว็บเบราเซอร์ได้
 
 ถ้าเรามี Homebrew อยู่ในเครื่องแล้ว การติดตั้ง nodejs ก็แสนจะง่ายดาย
 

@@ -2,7 +2,6 @@
 วิธีการตั้งค่าและลงโปรแกรมสำหรับวิชา Web Programming
 
 ## โปรแกรมที่ต้องใช้
-* Homebrew
 * NodeJS
 * MySQL database
 * VSCode

@@ -3,7 +3,6 @@
 ---
 
 ## โปรแกรมที่ต้องใช้
-* Homebrew
 * NodeJS
 * MySQL database
 * VSCode

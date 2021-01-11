@@ -6,10 +6,11 @@
 * Homebrew
 * NodeJS
 * MySQL database
-* \*TODO\* MySQL Workbench
+* MySQL Workbench
 * VSCode
 * VSCode Live Server
 * Postman
+* Chrome Vue - devtool
 
 ---
 
@@ -58,7 +59,7 @@ brew install node
 ```
 
 <details>
-    <img src="imgs/install-nodejs.png" />
+    <img src="imgs/install-nodejs.png" width="600" />
 </details>
 <br>
 
@@ -83,7 +84,7 @@ brew install mysql
 ```
 
 <details>
-    <img src="imgs/install-mysql.png" />
+    <img src="imgs/install-mysql.png" width="600" />
 </details>
 <br>
 
@@ -92,7 +93,7 @@ brew install mysql
 brew services start mysql
 ```
 <details>
-    <img src="imgs/install-mysql-start-service.png" />
+    <img src="imgs/install-mysql-start-service.png" width="600" />
 </details>
 <br>
 
@@ -104,19 +105,22 @@ brew services start mysql
 mysql_secure_installation
 ```
 <details>
-    <img src="imgs/install-mysql-secure-server.png" />
+    <img src="imgs/install-mysql-secure-server.png" width="600" />
 </details>
 <br>
 
 ถ้าใช้ในเครื่อง Production ที่ต้องการความปลอดภัยสูงแนะนำให้ตอบ y (yes) ทั้งหมด  
 แต่ตอนนี้เราใช้งานในระดับ Development แนะนำให้ตอบ n (no) ทั้งหมดเพื่อให้ใช้งานได้ง่ายครับ  
 
+### 4. ติดตั้ง MySQL Workbench
+MySQL Workbench เป็นโปรแกรมจัดการฐานข้อมูล MySQL สามารถดาวโหลดน์มาติดตั้งได้เหมือนโปรแกรมทั่วไป [download](https://dev.mysql.com/downloads/workbench/)
 
-### 4. ติดตั้ง Visual Studio Code (VSCode)
+
+### 5. ติดตั้ง Visual Studio Code (VSCode)
 VSCode เป็นโปรแกรม text editor ยอดนิยมในการเขียนโค๊ด สามารถดาวโหลดน์มาติดตั้งได้เหมือนโปรแกรมทั่วไป [download](https://code.visualstudio.com/)
 
 
-### 5. ติดตั้ง Live Server Extension สำหรับ VSCode
+### 6. ติดตั้ง Live Server Extension สำหรับ VSCode
 Live Server เป็น ส่วนขยาย (Extension) สำหรับ VSCode  
 เจ้า Live Server ตัวนี้จะช่วย refresh หน้าเว็บของเราโดยอัตโนมัติเมื่อเราทำการ save ไฟล์
 
@@ -125,13 +129,33 @@ Live Server เป็น ส่วนขยาย (Extension) สำหรับ
 2. ค้นหาคำว่า "Live Server"
 3. เลือก Live Server ของคุณ "Ritwick Dey" กดปุ่ม Install
 <details>
-    <img src="imgs/live-server-extension.png">
+    <img src="imgs/live-server-extension.png" width="600" />
 </details>
 <br>
 
 4. รอจน Install เสร็จ จากนั้นปิดโปรแกรม VSCode และเปิดขึ้นมาใหม่
 
 
-### 6. Postman
+### 7. Postman
 Postman เป็น REST API Client สามารถช่วยเราในการทดสอบ API ที่เราจะสร้างขึ้นมา  
 สามารถดาวโหลดน์มาติดตั้งได้เหมือนโปรแกรมทั่วไป [download](https://www.postman.com/downloads/)
+
+
+### 8. Google Chrome และ Vue.js devtools
+ในวิชานี้แนะนำให้ใช้ Google Chrome เป็นเว็บเบราเซอร์ในการเขียนโปรแกรม เนื่องจาก Google Chrome มีเครื่องมือสำหรับนักพัฒนาที่ใช้ง่าย  
+
+โดยเราสามารถเปิดเครื่องมือนักพัฒนา (Developer Tools) โดยการกดปุ่ม F12 หรือ ทำตามรูป
+<img src="imgs/open-chrome-devtool.png" width="600" />
+<img src="imgs/chrome-devtool.png" width="600" />
+
+โดยแทปที่ใช้บ่อย ๆ คือ
+* Element
+* Console
+* Network
+* Application
+* Vue (ต้อง install extension [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd/related?hl=en) จาก Chrome Web Store ก่อน)
+    <details>
+        <img src="imgs/install-vuejs-devtool.png" width="600" /> 
+    </details>
+
+**หมายเหตุ** อาจจะยังมองไม่เห็นแทป Vue เนี่องจากแทปนี้จะปรากฎขึ้นมาเมื่อเราเปิดเว็บไซต์ที่มีการใช้ vue.js ใน development mode เท่านั้น
